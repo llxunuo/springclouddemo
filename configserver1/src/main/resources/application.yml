@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8889
+
+#�����ļ������
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.oschina.net/chrywhy/test
+          search-paths: spring-cloud/helloworldConfig
+  application:
+    name: config-server
+
+

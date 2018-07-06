@@ -1,0 +1,16 @@
+
+ eureka:
+     client:
+         serviceUrl:
+             defaultZone: http://localhost:8761/eureka/
+ server:
+     port: 8903
+ spring:
+     application:
+         name: hystrix-dashboard-turbine
+ turbine:
+     appConfig: service-feign, service-ribbon              #turbine.appConfig定义要监控的服务
+     aggregator:
+         clusterConfig: default                        #聚合方式
+     clusterNameExpression: new String("default")
+     instanceUrlSuffix: /hystrix.stream
