@@ -5,7 +5,6 @@ eureka:
 server:
   port: 8888
 
-#�����ļ������
 spring:
   cloud:
     config:
@@ -19,8 +18,7 @@ spring:
     host: localhost
     port: 5672
 
-#如果用poster等发送POST请求是出现错误：“Full authentication is required to access this resource.", 那么可以在yml配置文件中加入以下内容禁止Config server的权限拦截。
- management:
-   security:
-     enabled: false  #忽略权限拦截
-
+##如果用poster等发送POST请求是出现错误：“Full authentication is required to access this resource.", 那么可以在yml配置文件中加入以下内容禁止Config server的权限拦截。
+# management:
+#   security:
+#     enabled: false  #忽略权限拦截
