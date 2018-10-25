@@ -21,7 +21,7 @@ public class EurakeclientApplication {
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/")
+    @RequestMapping("/eurake1/h")
     public String home(){
         return "hello world from port "+port;
     }

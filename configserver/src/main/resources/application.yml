@@ -10,8 +10,9 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/chrywhy/test
-          search-paths: spring-cloud/helloworldConfig
+          uri: git@github.com:llxunuo/demo.git
+#          search-paths: spring-cloud/helloworldConfig
+          search-paths: src
   application:
     name: config-server
   rabbitmq:

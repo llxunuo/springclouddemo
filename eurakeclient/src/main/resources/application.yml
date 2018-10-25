@@ -7,12 +7,14 @@
 
  spring:
      application:
-       name: config-client
+       name: config-client1
      cloud:
        config:
+#          name: config-server-dev
           label: master
           profile: dev
 #         uri: http://localhost:8888/
           discovery:
             enable: true
             serviceId: config-server
+
